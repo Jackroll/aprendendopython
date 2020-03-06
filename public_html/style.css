@@ -1,1 +1,18 @@
+p {
+    text-align: left;
+    color: rgb(126, 126, 126);
+    font-weight: bold;
+}
 
+body{
+    background-color: rgb(241, 237, 237);
+    color: rgb(82, 80, 80);
+}
+
+p.a {
+
+    font-weight: bold;
+    color: red;
+    line-height: 0.2;
+    
+}

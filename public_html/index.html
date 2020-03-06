@@ -1,11 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="style.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aprendendo Python</title>
 </head>
 <body>
-    Teste
+    <p>Comandos Git:</p>
+
+        <p>####### NAVEGAÇÃO #############</p>
+    <ol class="a">
+       <li>pwd - Identifica o diretório que esta</li> 
+       <li>ls - lista os arquivos do diretório</li> 
+       <li>cd /d - Acessa o diretório D:</li> 
+       <li>cd pasta - Acessa pasta</li> 
+       <li>clear - limpa a tela</li> 
+    
+        
+    </ol>
+
+    <p>####### ARQUIVOS #############</p>
+     <ol>
+    <li>mkdir nomepasta - cria uma pasta</li>
+    <li>touch nomearquivo - cria arquivo</li>
+    <li>touch pasta/arquivo - cria pasta e arquivo</li>
+    <li>git status - verifica se tem algum arquivo para fazer add ou commit</li>
+    <li>git add nomedoarquivo - faz o add ao containner</li>
+    <li>git add * - adiciona todos os arquivos disponiveis para o containner</li>
+    <li>git commit -m "Comentário" - faz o commit dos arquivos disponiveis</li>
+    <li>git log - lista todas as alterações sofridas nos arquivos</li>
+    <li>git log --oneline - lista todas as alterações sofridas nos arquivos em apenas uma linha por modificação</li>
+    <li>git log --graph - mostra o desenho do grafo de commit</li>
+    <li>git log --oneline --graph - mostra o desenho do grafo de commit, somente os nodos</li>
+    <li>git commit --am "comentários" - adiciona ao container e faz o commit de um arquivo ao mesmo tempo</li>
+    <li>git branch - identifica o ramo do arquivo</li>
+    <li>git diff - mostra as ultimas alterações no arquivo</li>
+    <li>git checkout nomedoarquivo - descarta a ultima alteração do arquivo</li>
+    <li>git reset HEAD nomedoarquivo - remove o conteudo do container</li>
+    <li>git checkout -b teste - cria ramificação no grafo</li>
+    <li>git log --graph --all - mostra o desenho do grafo com todos os ramos (se travar usar a letra Q)</li>
+    <li>git checkout <branch> - volta ao branch identificado (volta todas as alterações do arquivo )</li>
+    <li>git merge <nomebranch> - une os branchs, deve estar no master e colocar o nome dou outro branch no caso teste</li>
+    <li>git push - envia os arquivos local para o github</li>
+    <li>HEAD - Ultimo commit</p></li>
+
+    </ol>  
+   
+<p class="a"> Observações: A cada commit o arquivo é atualizado, e não é criado nova cópia, ficando apenas o arquivo atual </p>
+<p class="a">destravar tela tecla Q</p>
+        
+        
+        
 </body>
 </html>
