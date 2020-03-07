@@ -2,6 +2,15 @@
 
 def contar_caracteres(s):                               #função para contar valores ordenados
 
+    """Função que conta os caracteres de uma string
+    Ex:
+
+    >>> contar_caracteres('banana')
+    a : 3
+    b : 1
+    n : 2
+    """    
+
     carac_ordenados = sorted(s)                         #Ordena as letras da palavra em ordem alfabética
     carac_anterior = carac_ordenados[0]                 #atribui a uma variável o caracter da primeira posição
     contagem = 1
