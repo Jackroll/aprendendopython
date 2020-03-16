@@ -1,6 +1,6 @@
-from pythonbirds.oo.Associacao.classes import Escritor
-from pythonbirds.oo.Associacao.classes import Caneta
-from pythonbirds.oo.Associacao.classes import MaquinaDeEscrever
+from classes import Escritor
+from classes import Caneta
+from classes import MaquinaDeEscrever
 
 #Criando objetos independentes - escritor / caneta / máquina
 escritor = Escritor('João')

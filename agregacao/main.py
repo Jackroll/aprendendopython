@@ -1,4 +1,4 @@
-from pythonbirds.oo.agregacao.classes import CarrinhoDeCompras, Produto
+from classes import CarrinhoDeCompras, Produto
 
 carrinho = CarrinhoDeCompras()
 
