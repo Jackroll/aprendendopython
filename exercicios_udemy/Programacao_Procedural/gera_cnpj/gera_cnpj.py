@@ -6,7 +6,7 @@ def valida(cnpj):
 
     novo_cnpj = calcula_digito(cnpj = cnpj, digito = 1)        # igual ao CNPJ gerado adicionado do 1º digito    
     novo_cnpj = calcula_digito(cnpj = novo_cnpj, digito = 2)   # igual ao CNPJ anterior adicionado com o 2º digito encontrado
-    print(novo_cnpj)
+    print(f'CNPJ Gerado: {novo_cnpj[:2]}.{novo_cnpj[2:5]}.{novo_cnpj[5:8]}/{novo_cnpj[8:12]}-{novo_cnpj[12:14]}')
 
 
 #Função para calcular os digitos verificadores
