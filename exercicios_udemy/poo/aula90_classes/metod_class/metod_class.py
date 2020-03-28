@@ -16,16 +16,19 @@ class Pessoa:
         print (nome, idade)
 
     #não pode ser usado o atributo self nem o cls
-    #é metodo que não tem nada haver com a classe pessoa mas como esta dentro da classe pode ser acessada pela intancia ou pela classe
+    #é metodo comum que não tem nada haver com a classe pessoa mas como esta dentro da classe pode ser acessada pela intancia ou pela classe
+    #se este método não estivesse dentro da classe não daria de usar pelo objeto, é questão de organização
     @staticmethod                                           
     def gera_id():
         id = random.randint(10000, 19999)
         print(id)
     
 
+
+
 #instanciando os objetos tipo Pessoa
 p1 = Pessoa.por_ano_nascimento('Pedro', 1915)                   #acessando o método de classe
 p1 = Pessoa('Jacson', 33)                                       #acessando o método do objeto
 Pessoa.gera_id()                                                #static method pode ser chamado pela classe    
 p1.gera_id()                                                    #static method pode ser chamado pela instancia
-    
+
