@@ -9,7 +9,7 @@ class ContaCorrente(Conta):
     def limite(self):
         return self._limite
 
-    def sacar(self, valor):                                                     #classe abstrata definida para a classe poder ser instanciada
+    def sacar(self, valor):                                                     #Polimorfismo classe abstrata definida para a classe poder ser instanciada
         if valor > (self._saldo + self._limite):
             print("Não existe saldo suficiente para o saque solicitado")
             return

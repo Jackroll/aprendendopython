@@ -9,6 +9,13 @@ exemplo:
  - Conta Universitária, etc....
 
  Para pode fazer uma classe abstrata deve ser imporata a ABC e abstractmethod from abc
+
+ Polimorfismo: é o prncipio que permite que classes derivadas de uma mesma superclasse
+ tenham metodos iguais (mesma assinatura) mas comportamentos diferentes
+ Mesma assinatura = mesma qtd e tipo de parametros
+ Exemplo: metodo sacar, e um metodo abstrato na superclasse e é recriado nas classes
+ cContaPoupança e ContaCorrente, que possui a mesma assinatura, no entanto funcionamento diferente
+ pois na classe ContaCorrente foi adicionado limite
 """
 
 from classes.contapoupanca import ContaPoupanca
