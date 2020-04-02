@@ -1,0 +1,64 @@
+Associação - UM objetos Usa objetos de outra classe
+Agregação - Um objeto Tem objetos de outra classe
+Composição - Um objeto É dono de objetos de outras classes
+Herança - Um objeto é outro objeto
+
+Exemplo Herança:
+Se eu tenho uma classe Cliente que possui atributos nome e idade, e outra classe Alunos que possui os atributos nome e idade tambem
+percebe-se uma repetição de códigos desnecessários, pois ambos possuem os mesmos atributos, deste modo pode-se criar uma unica classe
+Pessoas() com o atributos e ou métodos padrão que podem ser herdados pelas outras classes, deste modo estou afirmando que um Cliente() é uma pessoa e
+um Aluno()
+
+Podem ser sobrescritos métodos da super classe, criando o mesmo método na subclasse, mas caso seja necessário ainda assim executar o método original (Super classe)
+este pode ser chamado atraves do Super().nomemetodo(), ou ainda informando o nome da classe na frente NomeClasse().nomemetodo()
+Se usar o Super().metodo(atributo) - deve passar o atributo se existir
+Se usar o nome da classe NomeClasse().metodo(self, atributo) - deve passar o self e os atributos se existirem
+
+Subclasses podem herdar de subclasses exemplo:
+class Pai() - Super
+class Filha(Pai) - Subclasse
+class FilhaDaFilha(Filha) - Subclasse
+
+A herança é exercida de cima pra baixo
+
+"""classes abstratas (é um conceito)
+Não pode ser instanciada, é força as subclasses a fazer alguma ação
+deve ser sempre isntanciada a especialização da Classe abstrata
+
+exemplo:
+ - Conta Bancaria - Classe abstrata é um conceito - não pode ser instanciada
+ - Conta Corrente, é uma especialização da classe abstrata Conta Bancaria
+ - Conta Poupança
+ - Conta Universitária, etc....
+
+ Para pode fazer uma classe abstrata deve ser imporata a ABC e abstractmethod from abc
+
+ Polimorfismo: é o prncipio que permite que classes derivadas de uma mesma superclasse
+ tenham metodos iguais (mesma assinatura) mas comportamentos diferentes
+ Mesma assinatura = mesma qtd e tipo de parametros
+ Exemplo: metodo sacar, e um metodo abstrato na superclasse e é recriado nas classes
+ cContaPoupança e ContaCorrente, que possui a mesma assinatura, no entanto funcionamento diferente
+ pois na classe ContaCorrente foi adicionado limite
+"""
+
+"""Herança Multipla:
+class A:
+class B (A):
+class C (B):
+class D (B, C) --> Herança Multipla
+
+Foram criadas 3 classes: Eletronico, SmartPhone e LogMixin
+ - Eletronico é a super classe com atributos e métodos padrões
+ - LogMixin é totalmente idependente das outras duas classes e não herda de nenhuma classe, é usada para trazer funcionalidade para classe que herda-la
+ - SmartPhone herda de Eletronico e Logmixin
+    Alem dos atributos e metodos padrões a classe SmartPhone, sobrescreveu adiconando atributos ao metodo __init__ de Eletronico
+    Do logmixin herdou melhorias e funcionalidades
+"""
+
+"""
+Encapsulamnento
+Convensão:
+_ Protected (1 underline em frente a variável, atributo ou método) recomenda-se que não se acesse a variável de fora da classe
+__ Private (2 underlines em frente a variável, atributo ou método) recomenda-se fortemente que não se acesse a variável de fora da classe
+Private pode ser acessado, ou modificar o seu valor (_nomeclasse__nomeatributo)
+"""
