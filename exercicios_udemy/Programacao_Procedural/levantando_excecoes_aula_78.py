@@ -11,7 +11,7 @@ def converte_numero(valor):
             valor = float(valor)    #se falhar a primeira conversão tenta converter para float
             return valor
         except ValueError:          #se falhar a conversão anterior vai retornar o valor como None
-            pass
+            return False
 
 while True:                         #executa o programa enquanto for True
 

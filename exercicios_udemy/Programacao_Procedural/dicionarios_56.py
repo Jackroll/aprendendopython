@@ -120,16 +120,27 @@ clientes = {
     'cliente1' : {
         'nome' : 'Jacson',
         'sobrenome' : 'Jeremias',
+        'agencia' : '255',
+        'conta' : '35356',
     },
     'cliente2' : {
         'nome' : 'Daiane',
         'sobrenome' : 'Braviano',
+        'agencia' : '255',
+        'conta' : '32365',
     },
-} 
+}
 
+
+x = False
 for clientes_k, clientes_v in clientes.items():
     print(f'Exibindo : {clientes_k}')                   #primeira iteração acessa a chave cliente1, 2 ....
     for dados_k, dados_v in clientes_v.items():        
         print(f'\t{dados_k}, {dados_v}')                #segunda iteração acessa os valores do dicionário da chave 2 que possui os dados do cliente
+        if '255' in dados_v:
+            x = True
+
+print(x)
     
 print('-----------------------------------------------')
+
